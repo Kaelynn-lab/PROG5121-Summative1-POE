@@ -22,10 +22,10 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      # Step 3: Build project using Maven
+      # Step 3: Build project using Maven (point to pom.xml in RegAndLogin)
       - name: Build with Maven
-        run: mvn clean install
+        run: mvn -f RegAndLogin/pom.xml clean install
 
       # Step 4: Run Task class tests
       - name: Run Task class tests
-        run: mvn -Dtest=TaskTest test
+        run: mvn -f RegAndLogin/pom.xml -Dtest=TaskTest test
