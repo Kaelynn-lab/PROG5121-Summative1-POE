@@ -749,11 +749,12 @@ public class Message {
         disregardedMessages[disregardedCount++] = new MessageEntry("1000000003","+27834484567", "Yohoooo, I am at your gate.", "10:3:YOH000OGATE");
 
         //Message 4: Sent
-        sentMessages[sentCount++] = new MessageEntry("1000000004", "+27834434567", "It is dinner time!", "10:4:ITTIME");
+         sentMessages[sentCount++] = new MessageEntry("0838884567", "+27834434567", "It is dinner time!", "10:4:ITTIME");
 
         //Message 5: Stored
         storedMessages[storedCount++] = new MessageEntry("1000000005", "+27838884567", "Ok, I am leaving without you.", "10:5:OKYOU");
     }
 }
+
 
 
