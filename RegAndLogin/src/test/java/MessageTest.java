@@ -97,13 +97,13 @@ public class MessageTest {
     @Test
     public void testSearchByMessageID() {
         //Test search for a sent message
-        String messageID = Message.sentMessages[0].getMessageID();
+        String searchID = "0838884567";
         boolean found = false;
 
         for (int i = 0; i < Message.sentCount; i++) {
-            if (Message.sentMessages[i].getMessageID().equals(messageID)) {
+            if (Message.sentMessages[i].getMessageID().equals(searchID)) {
                 found = true;
-                assertEquals("Did you get the cake?", Message.sentMessages[i].getMessage());
+                assertEquals("It is dinner time!", Message.sentMessages[i].getMessage());
                 break;
             }
         }
@@ -156,5 +156,6 @@ public class MessageTest {
         assertTrue(messagesFound.toString().contains("Ok, I am leaving without you."));
     }
 }
+
 
 
